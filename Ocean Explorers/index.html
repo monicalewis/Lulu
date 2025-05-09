@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Explorers Memory Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="start-screen" class="screen">
+            <h1>Ocean Explorers</h1>
+            <div class="player-selection">
+                <label for="player-count">Number of Players (1-4):</label>
+                <input type="number" id="player-count" min="1" max="4" value="1">
+                <button id="start-game">Start Game</button>
+            </div>
+        </div>
+
+        <div id="game-screen" class="screen hidden">
+            <div id="player-scores"></div>
+            <div id="cards-container"></div>
+        </div>
+
+        <div id="game-over-screen" class="screen hidden">
+            <h2>Game Over!</h2>
+            <div id="final-scores"></div>
+            <button id="play-again">Play Again</button>
+        </div>
+    </div>
+    <script src="images.js"></script>
+    <script src="game.js"></script>
+</body>
+</html> 
